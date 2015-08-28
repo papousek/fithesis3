@@ -213,7 +213,7 @@
 % Subsequently, the \texttt{tabular} and \texttt{tabularx}
 % environments are redefined to better match the style of the given
 % faculty.
-% 
+%
 % The |\thesis@newtable@old| and |\endthesis@newtable@old| macros
 % containing the original definition of the |tabular| environment
 % are always defined and are available for subsequently loaded
@@ -347,7 +347,7 @@
   \fi}
 %    \end{macrocode}
 % \end{macro}\begin{macro}{\thesis@blocks@facultyLogo@monochrome}
-% The |\thesis@blocks@facultyLogo@monochrome|\oarg{options} 
+% The |\thesis@blocks@facultyLogo@monochrome|\oarg{options}
 % macro typesets the |\thesis@logopath\thesis@facultyLogo| logo
 % with the given \textit{options} passed to |\includegraphics|.
 % \begin{macrocode}
@@ -357,7 +357,7 @@
     \includegraphics[#1]{\@path}}}
 %    \end{macrocode}
 % \end{macro}\begin{macro}{\thesis@blocks@facultyLogo@color}
-% The |\thesis@blocks@facultyLogo@color|\oarg{options} 
+% The |\thesis@blocks@facultyLogo@color|\oarg{options}
 % macro typesets either the |\thesis@logopath\thesis@facultyLogo|
 % logo, if the |\ifthesis|\discretionary{}{}{}|@color@| conditional
 % is \texttt{false}, or the
@@ -383,7 +383,7 @@
     \includegraphics[#1]{\@path}}}
 %    \end{macrocode}
 % \end{macro}\begin{macro}{\thesis@blocks@universityLogo@color}
-% The |\thesis@blocks@universityLogo@color|\oarg{options} 
+% The |\thesis@blocks@universityLogo@color|\oarg{options}
 % macro typesets either the |\thesis@logopath\thesis@universityLogo|
 % logo, if the |\ifthesis|\discretionary{}{}{}|@color@| conditional
 % is \texttt{false}, or the
@@ -902,7 +902,7 @@
 \let\@listi\@listI}
 
 \renewcommand{\small}{\fontsize\@xpt{12}\selectfont%
-\abovedisplayskip 10\p@ plus2\p@ minus5\p@ 
+\abovedisplayskip 10\p@ plus2\p@ minus5\p@
 \belowdisplayskip \abovedisplayskip
 \abovedisplayshortskip  \z@ plus3\p@
 \belowdisplayshortskip  6\p@ plus3\p@ minus3\p@
@@ -913,7 +913,7 @@
 \renewcommand{\footnotesize}{\fontsize\@ixpt{11}\selectfont%
 \abovedisplayskip 8\p@ plus2\p@ minus4\p@
 \belowdisplayskip \abovedisplayskip
-\abovedisplayshortskip \z@ plus\p@ 
+\abovedisplayshortskip \z@ plus\p@
 \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@
 \def\@listi{\leftmargin\leftmargini
 \topsep 4\p@ plus2\p@ minus2\p@\parsep 2\p@ plus\p@ minus\p@
@@ -989,7 +989,7 @@
 \def\@listi{\leftmargin\leftmargini %% Added 22 Dec 87
 \topsep 6\p@ plus2\p@ minus2\p@\parsep 3\p@ plus2\p@ minus\p@
 \itemsep \parsep}}
-            
+
 \def\thesis@titlePage@scriptsize{\fontsize\@viiipt{9.5pt}\selectfont}
 \def\thesis@titlePage@tiny{\fontsize\@vipt{7pt}\selectfont}
 \def\thesis@titlePage@large{\fontsize\@xivpt{18pt}\selectfont}
@@ -1013,29 +1013,29 @@
 \let\@normalsize\normalsize
 \normalsize
 
-\if@twoside               
-   \oddsidemargin 0.75in  
-   \evensidemargin 0.4in  
-   \marginparwidth 0pt    
-\else                     
-   \oddsidemargin 0.75in  
+\if@twoside
+   \oddsidemargin 0.75in
+   \evensidemargin 0.4in
+   \marginparwidth 0pt
+\else
+   \oddsidemargin 0.75in
    \evensidemargin 0.75in
    \marginparwidth 0pt
 \fi
-\marginparsep 10pt        
+\marginparsep 10pt
 
-\topmargin 0.4in          
-                          
-\headheight 20pt          
-\headsep 10pt             
-\topskip 10pt    
-\footskip 30pt 
+\topmargin 0.4in
+
+\headheight 20pt
+\headsep 10pt
+\topskip 10pt
+\footskip 30pt
 
 %<*10pt>
 \textheight = 43\baselineskip
 \advance\textheight by \topskip
 \textwidth 5.0truein
-\columnsep 10pt       
+\columnsep 10pt
 \columnseprule 0pt
 
 \footnotesep 6.65pt
@@ -1080,7 +1080,7 @@
 \@dblfptop 0pt plus 1fil
 \@dblfpsep 8pt plus 2fil
 \@dblfpbot 0pt plus 1fil
-\marginparpush 5pt 
+\marginparpush 5pt
 
 \parskip 0pt plus 0pt
 \partopsep 3pt plus 1pt minus 2pt
@@ -1096,7 +1096,7 @@
 
 \footnotesep 8.4pt
 \skip\footins 10.8pt plus 4pt minus 2pt
-\floatsep 14pt plus 2pt minus 4pt 
+\floatsep 14pt plus 2pt minus 4pt
 \textfloatsep 20pt plus 2pt minus 4pt
 \intextsep 14pt plus 4pt minus 4pt
 \dblfloatsep 14pt plus 2pt minus 4pt
@@ -1149,8 +1149,8 @@
 \def\chapter{%
    \clearpage
    \thispagestyle{plain}
-   \global\@topnum\z@ 
-   \@afterindentfalse  
+   \global\@topnum\z@
+   \@afterindentfalse
    \secdef\@chapter\@schapter
  }
 
@@ -1158,7 +1158,7 @@
   \ifnum \c@secnumdepth
     >\m@ne
     \refstepcounter{chapter}%
-    \typeout{\@chapapp\space\thechapter.}% 
+    \typeout{\@chapapp\space\thechapter.}%
     \addcontentsline{toc}{chapter}{\protect
     \numberline{\thechapter}\bfseries #1}
   \else%
@@ -1166,14 +1166,14 @@
   \fi
   \chaptermark{#1}%
   \addtocontents{lof}%
-  {\protect\addvspace{4\p@}} 
+  {\protect\addvspace{4\p@}}
   \addtocontents{lot}%
-  {\protect\addvspace{4\p@}} 
-  \if@twocolumn                   
+  {\protect\addvspace{4\p@}}
+  \if@twocolumn
     \@topnewpage[\@makechapterhead{#2}]%
   \else
     \@makechapterhead{#2}%
-    \@afterheading          
+    \@afterheading
   \fi
 }
 
@@ -1186,7 +1186,7 @@
     -.2ex}{2.3ex plus.2ex}{\reset@font\large\bfseries}}
 \def\subsection{\@startsection{subsection}{2}{\z@}{-3.25ex plus-1ex
     minus-.2ex}{1.5ex plus.2ex}{\reset@font\normalsize\bfseries}}
-\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{-3.25ex plus   
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{-3.25ex plus
     -1ex minus-.2ex}{1.5ex plus.2ex}{\reset@font\normalsize}}
 \def\paragraph{\@startsection
     {paragraph}{4}{\z@}{3.25ex plus1ex minus.2ex}{-1em}{\reset@font
@@ -1236,10 +1236,10 @@
 
 \def\@listiv{\leftmargin\leftmarginiv
      \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
-   
+
 \def\@listv{\leftmargin\leftmarginv
      \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
-   
+
 \def\@listvi{\leftmargin\leftmarginvi
      \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
 %</10pt>
@@ -1266,10 +1266,10 @@
 
 \def\@listiv{\leftmargin\leftmarginiv
      \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
-   
+
 \def\@listv{\leftmargin\leftmarginv
      \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
-    
+
 \def\@listvi{\leftmargin\leftmarginvi
      \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
 %</11pt>
@@ -1296,10 +1296,10 @@
 
 \def\@listiv{\leftmargin\leftmarginiv
      \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
-   
+
 \def\@listv{\leftmargin\leftmarginv
      \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
-    
+
 \def\@listvi{\leftmargin\leftmarginvi
      \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
 %</12pt>

@@ -50,7 +50,7 @@
 % {\newwrite\f\openout\f=VERSION\write\f{\thesis@version}\closeout\f}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % \changes{v0.3.21}  {2015/08/26}{Fixed an invalid font name. [VN]}
 % \changes{v0.3.20}  {2015/07/07}{Removed an extraneous
 %   \cs{hypersetup} option to eliminate a warning. Performed
@@ -273,7 +273,7 @@
 % The main public macro is the |\thesissetup|\marg{keyvals}
 % command, where \textit{keyvals} is a comma-delimited list of
 % key-value pairs as defined by the \textsf{keyval} package. This
-% macro needs to be included prior to the beginning of a \LaTeX\ 
+% macro needs to be included prior to the beginning of a \LaTeX\
 % document. When used, the \textit{keyvals} are processed.
 %
 % Note that the values passed to the |\thesissetup| public macro
@@ -806,7 +806,7 @@
   \gdef\thesis@year{#1}%
   \gdef\thesis@month{#2}%
   \gdef\thesis@day{#3}%
-  
+
   % Season and academic year
   \newcount\@year \expandafter\@year \thesis@year \relax%
   \newcount\@month\expandafter\@month\thesis@month\relax%
@@ -1102,7 +1102,7 @@
         \AtEndDocument{\thesis@postamble}%
       \fi%
 %    \end{macrocode}
-% Lastly, the \DescribeMacro{\thesis@pages}|\thesis@pages| 
+% Lastly, the \DescribeMacro{\thesis@pages}|\thesis@pages|
 % macro definition containing the length of the document is
 % scheduled to be included in the auxiliary file.
 %    \begin{macrocode}
