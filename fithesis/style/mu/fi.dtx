@@ -46,12 +46,24 @@
     \ifx\thesis@type\thesis@rigorous%
       {\thesis@titlePage@large\\[0.3in]
         {\bf\thesis@@{advisorTitle}:} \thesis@advisor}
+    \else\ifx\thesis@type\thesis@proposal%
+      {\thesis@titlePage@large\\[0.3in]
+        {\bf\thesis@@{advisorTitle}:} \thesis@advisor}
     \fi}%
 \def\thesis@blocks@titlePage@footer{%
   {\thesis@titlePage@large\thesis@place, \thesis@@{semester}
   % If this is a rigorous thesis, create space for the advisor's
   % signature
   \ifx\thesis@type\thesis@rigorous%
+    \let\@A\relax\newlength{\@A}
+      \settowidth{\@A}{\thesis@@{advisorSignature}}
+      \setlength{\@A}{\@A+1cm}
+    \hfill\raisebox{-0.5em}{\parbox{\@A}{
+      \centering
+      \rule{\@A}{1pt}\\
+      \thesis@@{advisorSignature}
+    }}
+  \else\ifx\thesis@type\thesis@proposal%
     \let\@A\relax\newlength{\@A}
       \settowidth{\@A}{\thesis@@{advisorSignature}}
       \setlength{\@A}{\@A+1cm}
